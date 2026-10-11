@@ -1,0 +1,17 @@
+{{>head}}
+<form action ="/update/{{data.id}}" method="POST">
+    <input type = "hidden" name="id" value="{{data.id}}">
+    <label for ="Name">Name</label>
+    <input type = "text" name = "Name" placeholder = "Name" value="{{data.Name}}">
+    <label for ="Type">Type</label>
+    <input type = "text" name = "Type" placeholder = "Type" value="{{data.Type}}">
+    <label for ="Quantity">Quantity</label>
+    <input type = "number" name = "Quantity" placeholder = "Quantity" value="{{data.Quantity}}">
+    <label for ="Price">Price</label>
+    <input type = "number" name = "Price" placeholder = "Price" value="{{data.Price}}">
+    <label for ="DatePurchased">DatePurchased</label>
+    <input type = "text" name = "DatePurchased" placeholder = "DatePurchased" value="{{data.DatePurchased}}">
+     <input type ="submit" name= "save">
+  
+   
+</form>
